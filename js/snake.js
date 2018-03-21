@@ -9,7 +9,7 @@ class Snake{
 		this.headType = ut.random(0, 2);
 	
 		
-		this.pos = new Point(game.SCREEN_SIZE.x/2, game.SCREEN_SIZE.y/2);	
+		this.pos = new Point(window.innerWidth/2, window.innerHeight/2);	
 		this.velocity = new Point(0, 0); //arbitary point		
 		this.angle = ut.random(0, Math.PI);	
 
@@ -23,7 +23,7 @@ class Snake{
 		this.supportColor = ut.color(this.midColor, 0.33);
 
 		this.arr = [];		
-		this.arr.push(new Point(game.SCREEN_SIZE.x/2, game.SCREEN_SIZE.y/2));
+		this.arr.push(new Point(window.innerWidth/2, window.innerHeight/2));
 		for(var i=1; i<this.length; i++){
 			this.arr.push(new Point(this.arr[i-1].x, this.arr[i-1].y));
 		}

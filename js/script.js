@@ -8,11 +8,11 @@ var mouseDown = false,
 var game = new Game(ctxSnake, ctxFood, ctxHex);
 
 canvas.onmousemove = function(e){
-	if(mouseDown){		
+	// if(mouseDown){		
 		cursor = ut.getMousePos(canvas, e);	
 		var ang = ut.getAngle(game.snakes[0].arr[0], cursor);				
 		game.snakes[0].changeAngle(ang);		
-	}
+	// }
 }
 
 canvas.onmousedown = function(e){
