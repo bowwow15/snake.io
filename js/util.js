@@ -21,10 +21,9 @@ class Util{
 
 
 	randomColor(){	
-		var colors = ["#C0392B", "#E74C3C", "#9B59B6", "#8E44AD", "#2980B9",
-		"#3498DB", "#17A589", "#138D75", "#229954", "#28B463", "#D4AC0D",
-		 "#D68910", "#CA6F1E", "#BA4A00"];
-		return colors[this.random(0, colors.length-1)]
+		var color = "rgb(" + Math.floor(Math.random() * 150) + ", " + Math.floor(Math.random() * 150) + ", " + Math.floor(Math.random() * 150) + ")";
+
+		return color
 	}
 
 	
